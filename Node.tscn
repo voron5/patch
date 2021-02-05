@@ -13,6 +13,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5743, -0.630147, 0 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.986996, 0.160742, 0, -0.160742, 0.986996, -12.7423, 24.445, 17.2415 )
+far = 200.0
 script = ExtResource( 3 )
 
 [node name="world" parent="." instance=ExtResource( 2 )]

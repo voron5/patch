@@ -9,7 +9,7 @@ var vel = Vector3()
 onready var anim=$AnimationPlayer
 var state='idle'
 
-const gr_speed=15
+const gr_speed=10
 
 func _physics_process(delta):
 	var need_state = ''
