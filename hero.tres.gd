@@ -9,7 +9,7 @@ var vel = Vector3()
 onready var anim=$AnimationPlayer
 var state='idle'
 
-const gr_speed=1
+const gr_speed=15
 
 func _physics_process(delta):
 	var need_state = ''
@@ -38,7 +38,7 @@ func _physics_process(delta):
 	vel.z=dir.z
 	vel.x=dir.x
 	if !is_on_floor():
-		vel.y-=gr_speed
+		vel.y=-gr_speed
 	vel=move_and_slide(vel,Vector3.UP)
 	if anim.current_animation!='attack':
 		if !need_state:

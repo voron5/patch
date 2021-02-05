@@ -1,21 +1,104 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://hero.tscn" type="PackedScene" id=1]
 [ext_resource path="res://world.tscn" type="PackedScene" id=2]
 [ext_resource path="res://new_gdscript.gd" type="Script" id=3]
+[ext_resource path="res://tree.tscn" type="PackedScene" id=4]
+[ext_resource path="res://tree2.tscn" type="PackedScene" id=5]
 
 [node name="Node" type="Node"]
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5743, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5743, -0.630147, 0 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.986996, 0.160742, 0, -0.160742, 0.986996, -12.7423, 24.445, 17.2415 )
 script = ExtResource( 3 )
 
 [node name="world" parent="." instance=ExtResource( 2 )]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -7.23525, -24.7732, 5.71197 )
+transform = Transform( 15, 0, 0, 0, 10, 0, 0, 0, 15, -7.24244, -24.819, 5.7023 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.941052, 0.233332, 0.244903, -0.330988, 0.784507, 0.524401, -0.0697683, -0.574548, 0.815492, 21.7203, 55.8335, 22.6717 )
 shadow_enabled = true
+
+[node name="Node" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -17.0684, 3.77335, 14.7541 )
+
+[node name="Node2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -17.0569, 4.45538, -34.3739 )
+
+[node name="Node3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, -61.9489, 10.2822, 0 )
+
+[node name="Node4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, 29.4108, 8.31111, 92.5465 )
+
+[node name="Node5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, 29.4108, 8.31111, 79.0435 )
+
+[node name="Node6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, 13.9376, 8.31111, 98.4216 )
+
+[node name="Node7" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 7.08203, 12.3695, 103.676 )
+
+[node name="Node8" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -71.4288, 12.1296, 99.1157 )
+
+[node name="Node9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -71.4288, 12.1296, 86.3793 )
+
+[node name="Node10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -80.4471, 14.0087, 65.503 )
+
+[node name="Node11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -16.5715, 14.0087, 65.503 )
+
+[node name="Node12" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -30.5567, 13.91, 52.96 )
+
+[node name="Node13" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, -8.04297, 12.1282, 52.96 )
+
+[node name="Node14" parent="." instance=ExtResource( 4 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 20.7614, 13.5937, 38.637 )
+
+[node name="tree" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9, -1.21581, 9.8 )
+
+[node name="tree7" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7077, -1.21581, -48.4477 )
+
+[node name="tree8" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.85, -6.86177, -39.2195 )
+
+[node name="tree9" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -77.4312, -3.3062, -39.2195 )
+
+[node name="tree10" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -77.4312, -3.3062, -65.5424 )
+
+[node name="tree11" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -87.671, -3.3062, 15.7117 )
+
+[node name="tree12" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -81.2262, -3.3062, 56.258 )
+
+[node name="tree13" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -86.6629, 2.86635, 113.846 )
+
+[node name="tree2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4215, -1.21581, 37.5753 )
+
+[node name="tree3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.98981, -1.21581, 79.5065 )
+
+[node name="tree4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4327, -6.82874, 69.5211 )
+
+[node name="tree5" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.856, -1.03307, 58.3525 )
+
+[node name="tree6" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74.9943, 4.02352, 58.3525 )
