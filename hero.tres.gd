@@ -1,15 +1,15 @@
 extends KinematicBody
 
-const run_speed=4
+var run_speed=4
 const rot_speed=0.05
-const dir_speed=2.5
+var dir_speed=3
 
 var vel = Vector3()
 
 onready var anim=$AnimationPlayer
 var state='idle'
 
-const gr_speed=10
+const gr_speed=20
 
 func _physics_process(delta):
 	var need_state = ''
@@ -39,12 +39,11 @@ func _physics_process(delta):
 	vel.x=dir.x
 	if !is_on_floor():
 		vel.y=-gr_speed
-	vel=move_and_slide(vel,Vector3.UP)
+	vel=move_and_slide(vel,Vector3.UP).normalized()
 	if anim.current_animation!='attack':
 		if !need_state:
 			need_state='idle'
 	set_state(need_state,need_anim)
-	
 func set_state(s,a=''):
 	if !s||state==s:
 		return
