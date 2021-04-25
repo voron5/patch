@@ -162,6 +162,7 @@ radius = 2.1947
 height = 3.8323
 
 [node name="player" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.1782, 0 )
 script = ExtResource( 7 )
 
 [node name="Armature" type="Spatial" parent="."]
@@ -259,5 +260,5 @@ anims/run = ExtResource( 5 )
 anims/turn = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, -2.47617, -0.307316 )
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, -1.80384, -0.307316 )
 shape = SubResource( 3 )
